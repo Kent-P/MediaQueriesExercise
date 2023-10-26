@@ -14,11 +14,17 @@ h1 {
     body {
         background-color: navy;
     }
+    #two {
+        color: navy;
+    }
   }
 
   @media (max-width: 600px) {
     body {
         background-color: orange;
+    }
+    #two {
+        color: orange;
     }
   }
 
@@ -49,5 +55,18 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+  }
+
+  @media print {
+    h1 {
+        text-transform: uppercase;
+        color: green;
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 775px) and (min-height: 550px) and (max-height: 575px) {
+    h1 {
+        font-style: italic;
     }
   }
